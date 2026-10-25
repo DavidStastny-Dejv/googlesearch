@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+header nav a {
+    margin-left: 15px;
+    color: #5f6368;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.logo {
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: -2px;
+}
+
+.logo span:nth-child(1) { color: #4285F4; }
+.logo span:nth-child(2) { color: #EA4335; }
+.logo span:nth-child(3) { color: #FBBC05; }
+.logo span:nth-child(4) { color: #4285F4; }
+.logo span:nth-child(5) { color: #34A853; }
+.logo span:nth-child(6) { color: #EA4335; }
+
+.search-form {
+    width: 100%;
+    max-width: 580px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-input-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.search-input {
+    width: 100%;
+    height: 44px;
+    padding-left: 45px;
+    padding-right: 45px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.search-input:hover, .search-input:focus {
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    border-color: rgba(223,225,229,0);
+}
+
+.search-buttons input[type="submit"], .search-buttons a {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 36px;
+    height: 36px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.search-buttons input[type="submit"]:hover, .search-buttons a:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+footer {
+    background-color: #f2f2f2;
+    padding: 15px 30px;
+    font-size: 14px;
+    color: #70757a;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #dadce0;
+}
+
+footer a {
+    color: #70757a;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

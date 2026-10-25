@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulářové prvky - Google Search</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .form-box {
+            max-width: 600px;
+            margin: 30px auto;
+            text-align: left;
+            padding: 20px;
+            border: 1px solid #dadce0;
+            border-radius: 8px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input[type="text"], .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Zpět na hlavní stránku</a>
+        </nav>
+    </header>
+
+    <div class="form-box">
+        <h2>Ukázka formulářových prvků</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Textové pole (input text):</label>
+                <input type="text" id="name" name="name" placeholder="Zadej text...">
+            </div>
+
+            <div class="form-group">
+                <label for="car">Rozbalovací seznam (select):</label>
+                <select id="car" name="car">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Zaškrtávací políčka (checkbox):</label>
+                <input type="checkbox" id="cb1" name="cb1" value="Bike">
+                <label for="cb1" style="display:inline;">Mám kolo</label><br>
+                <input type="checkbox" id="cb2" name="cb2" value="Car">
+                <label for="cb2" style="display:inline;">Mám auto</label>
+            </div>
+
+            <div class="form-group">
+                <label>Přepínače (radio):</label>
+                <input type="radio" id="gender_m" name="gender" value="male">
+                <label for="gender_m" style="display:inline;">Muž</label><br>
+                <input type="radio" id="gender_f" name="gender" value="female">
+                <label for="gender_f" style="display:inline;">Žena</label>
+            </div>
+
+            <div class="form-group">
+                <label for="bio">Textová oblast (textarea):</label>
+                <textarea id="bio" name="bio" rows="4"></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" style="padding: 10px 20px; background-color: #1a0dab; color: white; border: none; border-radius: 4px; cursor: pointer;">Odeslat formulář (Nefunkční ukázka)</button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <div><span>Česko</span></div>
+        <div>
+            <a href="https://validator.w3.org/" target="_blank">Validovat HTML</a>
+            <a href="https://jigsaw.w3.org/css-validator/" target="_blank">Validovat CSS</a>
+            <a href="citace.md" target="_blank">Citace a zdroje</a>
+            <a href="https://davidstastny-dejv.github.io/web-1/" target="_blank">Moje portfolio</a>
+        </div>
+    </footer>
+</body>
+</html>

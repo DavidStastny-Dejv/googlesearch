@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Obrázky</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Zpět na vyhledávání</a>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <div class="logo">
+            <span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span> <span style="font-size: 25px; vertical-align: super; color: #70757a;">Obrázky</span>
+        </div>
+        
+        <form action="https://images.google.com/search" method="GET" class="search-form">
+            <input type="hidden" name="tbm" value="isch">
+            <div class="search-input-container">
+                <input type="text" name="q" class="search-input" autofocus>
+            </div>
+            <div class="search-buttons">
+                <input type="submit" value="Hledat obrázky">
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <div><span>Česko</span></div>
+        <div>
+            <a href="https://validator.w3.org/" target="_blank">Validovat HTML</a>
+            <a href="https://jigsaw.w3.org/css-validator/" target="_blank">Validovat CSS</a>
+            <a href="citace.md" target="_blank">Citace a zdroje</a>
+            <a href="https://davidstastny-dejv.github.io/web-1/" target="_blank">Moje portfolio</a>
+        </div>
+    </footer>
+</body>
+</html>
